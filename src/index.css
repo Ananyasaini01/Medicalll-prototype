@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    font-size: 18px; /* High legibility baseline for senior users */
+  }
+}
+
+/* Custom Accessibility Styles */
+.elder-btn {
+  @apply py-3 px-6 text-lg font-bold rounded-xl transition duration-150 shadow-sm flex items-center justify-center gap-2 cursor-pointer;
+}
+
+.elder-input {
+  @apply w-full p-4 border-2 border-slate-300 rounded-xl text-lg focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 bg-white;
+}
+
+.elder-label {
+  @apply block text-slate-800 font-bold mb-2 text-base md:text-lg;
+}
